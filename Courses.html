@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
+  rel="stylesheet"
+  />
+  
+  <!-- CSS only -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+  crossorigin="anonymous"
+  />
+  
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Courses</title>
+</head>
+
+<body>
+  <!-- Start Header -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <img class="logo-img" src="imgs/LOGO.png" alt="" />
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"
+          >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Courses.html">
+            <span class="title">Courses</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="instructors.html">
+            <span class="title">Instructors</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact-us.html">
+            <span class="title">Contact Us</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about-us.html">
+            <span class="title">About Us</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          >
+          free courses
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">first course</a></li>
+          <li><a class="dropdown-item" href="#">second course</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">third course</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="d-flex">
+      <li class="list-inline-item list_s">
+        <a href="account.html" class="Login btn d-flex">
+          <i class="fa-regular fa-user"></i>
+          <span>Account</span>
+        </a>
+      </li>
+      <li class="list-inline-item list_s">
+        <a href="login.html" class="Login btn d-flex">
+          <i class="fa-regular fa-user"></i>
+          <span>Login</span>
+        </a>
+      </li>
+      <li class="list-inline-item list_s">
+        <a href="register.html" class="register btn d-flex">
+          <i ml-3 class="fa-regular fa-user"></i>
+          <span>Register</span>
+        </a>
+      </li>
+      
+      <input
+      class="form-control me-2"
+      type="search"
+      placeholder="Search"
+      aria-label="Search"
+      />
+      <button class="btn btn-outline-success" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+</div>
+</nav>
+<!-- End Header -->
+
+<!-- Start Courses  -->
+<div class="account">
+  <p><a href="index.html">Home</a> <span>/</span> <a href="Courses.html">Courses</a></p>
+</div>
+<!-- End Courses  -->
+
+<!-- Start Top Courses -->
+<div class="row g-0 m-3">
+  <!-- col-lg-9 -->
+  <div class="col-lg-9 mr-2">
+    <div>
+      <div class="row mt-5 mb-5">
+        <!-- Video Tutorials 1-->
+        <div class="result-Video col-lg-5">
+          <p>85</p>
+          <p>results 1,236</p>
+          <p>Video Tutorials</p>
+        </div>
+        <!-- dropdown-search 2-->
+        <div class="dropdown-search col-lg-7">
+          <div class="dropdown">
+            <button
+            class="drop dropdown"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >
+            <span>Newly published</span>
+            <i class="down fa-solid fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item activ" href="#"
+              >Newly published <i class="fa-solid fa-check"></i
+                ></a>
+              </li>
+              <li><a class="dropdown-item" href="#">Recent</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Old Review</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="input-group">
+            <input
+            type="search"
+            class="form-control"
+            aria-label="Text input with segmented dropdown button"
+            />
+            <button type="button" class="btn-search">
+              <i class="solid fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- articles 3-->
+    <div class="articles" id="articles">
+      <div class="articles-box">
+        <div class="box">
+          <img src="imgs/courses/t1.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Introduction Introduction Web Design with HTML</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t2.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Designing a Responsive Mobile Website with Muse</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t3.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Adobe XD: Prototyping Tips and Tricks</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t4.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Sketch: Creating Responsive Responsive SVG</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t5.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Design Instruments for Communication</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t6.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>How to be a DJ? Make Electronic Music</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t7.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>How to Make Beautiful Landscape Photos?</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t8.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Fashion Photography From Professional</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t13.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Fashion Photography From Professional</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t9.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Introduction Introduction Web Design with HTML</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t10.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Designing a Responsive Mobile Website with Muse</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="imgs/courses/t12.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a>Adobe XD: Prototyping Tips and Tricks</a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href=""> 1548 </a>
+              <i class="message fa-regular fa-message"></i>
+              <a href=""> 25 </a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- col-lg-3 -->
+  <div class="col-lg-3 ml-2">
+    <!-- Selected Filters 1-->
+    <div class="Selected-Filters mt-5 mb-4">
+      <button
+      class="Selected-button btn"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#multiCollapseExample2"
+      >
+      <span>Selected Filters </span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+          <div class="card-body">
+            <label>Photoshop <span>x</span></label>
+            <label>Sketch <span>x</span></label>
+            <label>Beginner <span>x</span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Software 2-->
+  <div class="Selected-Software mb-4">
+    <button class="Software-button" id="hide">
+      <span>Software</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="card-Software">
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Photoshop</span>
+        </div>
+        <p>(03)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Adobe Illustrator</span>
+        </div>
+        <p>(15)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Graphic Design</span>
+        </div>
+        <p>(126)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Sketch</span>
+        </div>
+        <p>(1,584)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>InDesign</span>
+        </div>
+        <p>(34)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>CorelDRAW</span>
+        </div>
+        <p>(34)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>After Effects</span>
+        </div>
+        <p>(06)</p>
+      </div>
+      
+      <div class="Software-Sections">
+        <div class="activ-hover">
+          <i class="solid fa-solid fa-plus"></i> See More
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Author 3-->
+  <div class="Selected-Author mb-4">
+    <button class="Author-button" id="toggle">
+      <span>Author</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="card-Author">
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Morten Rand</span>
+        </div>
+        <p>(15)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Rayi Villalobos</span>
+        </div>
+        <p>(125)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>James William</span>
+        </div>
+        <p>(1.584)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Jen Kramery</span>
+        </div>
+        <p>(34)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Chris Notder</span>
+        </div>
+        <p>(58)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Kramery Chris</span>
+        </div>
+        <p>(06)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>James William</span>
+        </div>
+        <p>(43)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Rayi Villalobos</span>
+        </div>
+        <p>(23)</p>
+      </div>
+      
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Kramery Chris</span>
+        </div>
+        <p>(57)</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Price 4-->
+  <div class="Selected-Price mb-4">
+    <button class="Price-button" id="Price">
+      <span>Price</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="card-Price">
+      <div class="Author-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Paid</span>
+        </div>
+      </div>
+      
+      <div class="Price-Sections">
+        <div class="form-switch">
+          <input class="check form-check-input" type="checkbox" />
+          <span>Free</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Skill level 5-->
+  <div class="Selected-skill mb-4">
+    <button class="skill-button" id="skill">
+      <span>Skill level</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="card-skill">
+      <div class="skill-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Beginner</span>
+        </div>
+        <p>(03)</p>
+      </div>
+      
+      <div class="skill-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Intermediate</span>
+        </div>
+        <p>(15)</p>
+      </div>
+      
+      <div class="skill-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Advanced</span>
+        </div>
+        <p>(126)</p>
+      </div>
+      
+      <div class="skill-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Appropriate for all</span>
+        </div>
+        <p>(1,584)</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Rating 6-->
+  <div class="Selected-Rating mb-4">
+    <button class="Rating-button" id="rating">
+      <span>Rating</span> <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    <div class="card-Rating">
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>Show All</span>
+        </div>
+        <p>(03)</p>
+      </div>
+      
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>1 star and higher</span>
+        </div>
+        <p>(15)</p>
+      </div>
+      
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>2 star and higher</span>
+        </div>
+        <p>(126)</p>
+      </div>
+      
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>3 star and higher</span>
+        </div>
+        <p>(1,584)</p>
+      </div>
+      
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>4 star and higher</span>
+        </div>
+        <p>(34)</p>
+      </div>
+      
+      <div class="Rating-Sections">
+        <div>
+          <input class="check form-check-input" type="checkbox" />
+          <span>5 star and higher</span>
+        </div>
+        <p>(58)</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Selected-Not-sure 7-->
+  <div class="sure-all mb-4">
+    <div class="sure">
+      <img src="imgs/2.png" alt="" />
+      <h3>Not sure?</h3>
+    </div>
+    <p>Every course comes with a 30-day money-back guarantee</p>
+  </div>
+</div>
+</div>
+<!-- End Top Courses -->
+
+<!-- Start Footer -->
+<div class="footer">
+  <div class="row g-0">
+    <div class="col-lg-4 col-md-6 p-3">
+      <div class="box">
+        <h5>Address</h5>
+        <a  href="index.html">329 Queensberry Street, North Melbourne</a>
+        <a  href="index.html">VIC 3051, Australia.</a>
+        <a  href="index.html">123 456 7890</a>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 p-3">
+      <div class="box">
+        <h5>Pages</h5>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact</a>
+        <a href="index.html">Become a Teacher</a>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 p-3">
+      <div class="box">
+        <h5>Contact</h5>
+        <a href="index.html">01234567890</a>
+        <a href="index.html">mohamed@email.come</a>
+        <a href="index.html">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <p class="copyright">Copyright kuttabi © 2020. All Rights Reserved.</p>
+</div>
+<!-- End Footer -->
+
+<!-- JavaScript Bundle with Popper -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+crossorigin="anonymous"
+></script>
+
+<!-- jquery -->
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
+<!-- script js -->
+<script src="js/main.js"></script>
+</body>
+</html>

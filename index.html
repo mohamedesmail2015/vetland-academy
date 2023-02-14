@@ -1,495 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- normalize -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
-  rel="stylesheet"
-  />
-  
-  <!-- CSS only -->
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-  crossorigin="anonymous"
-  />
-  
-  <!-- style.css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Courses</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <!-- Start Header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <img class="logo-img" src="imgs/LOGO.png" alt="" />
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html"
-          >Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="Courses.html">
-            <span class="title">Courses</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="instructors.html">
-            <span class="title">Instructors</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="contact-us.html">
-            <span class="title">Contact Us</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="about-us.html">
-            <span class="title">About Us</span>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-bs-toggle="dropdown"
+    <!-- bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- title -->
+    <title>Vetland Academy</title>
+    <link rel="icon" href="imgs/LOGO.png" />
+  </head>
+
+  <body>
+    <!-- Start Header 1 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img
+          class="logo-img"
+          src="imgs/LOGO.png"
+          alt="logo-img"
+          title="logo-img"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          >
-          free courses
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">first course</a></li>
-          <li><a class="dropdown-item" href="#">second course</a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">third course</a></li>
-        </ul>
-      </li>
-    </ul>
-    <form class="d-flex">
-      <li class="list-inline-item list_s">
-        <a href="account.html" class="Login btn d-flex">
-          <i class="fa-regular fa-user"></i>
-          <span>Account</span>
-        </a>
-      </li>
-      <li class="list-inline-item list_s">
-        <a href="login.html" class="Login btn d-flex">
-          <i class="fa-regular fa-user"></i>
-          <span>Login</span>
-        </a>
-      </li>
-      <li class="list-inline-item list_s">
-        <a href="register.html" class="register btn d-flex">
-          <i ml-3 class="fa-regular fa-user"></i>
-          <span>Register</span>
-        </a>
-      </li>
-      
-      <input
-      class="form-control me-2"
-      type="search"
-      placeholder="Search"
-      aria-label="Search"
-      />
-      <button class="btn btn-outline-success" type="submit">
-        <i class="fa-solid fa-magnifying-glass"></i>
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Courses.html" title="Home">
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="instructors.html"
+                title="Instructors"
+              >
+                Instructors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="contact-us.html"
+                title="Contact Us"
+              >
+                Contact Us
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="about-us.html" title="About Us">
+                About Us
+              </a>
+            </li>
+
+            <li class="nav-item dropdown" title="free courses">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                free courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">first course</a></li>
+                <li><a class="dropdown-item" href="#">second course</a></li>
+                <li><a class="dropdown-item" href="#">second course</a></li>
+                <li><a class="dropdown-item" href="#">second course</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="d-flex">
+            <li class="list-inline-item">
+              <a href="account.html" class="Login btn d-flex">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="login.html" class="Login btn d-flex">
+                <i class="fa-regular fa-user"></i>
+                <span>Login</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="register.html" class="register btn d-flex">
+                <i ml-3 class="fa-regular fa-user"></i>
+                <span>Register</span>
+              </a>
+            </li>
+          </ul>
+
+          <form>
+            <input
+              class="input-form"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="button-form btn btn-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Start slide 2-->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/slid 1.jpg" alt="#" />
+          <div class="carousel-caption d-none d-md-block">
+            <!-- <h1>Ready to get Started?</h1>
+            <p>
+              Self EducatIon Resources and Infos Technology is brining a massive
+              wave of evolution on learning things on different waysReady to get
+              Started?
+            </p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/slid 2.jpg" alt="#" />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/slid 3.jpg" alt="#" />
+          <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-    </form>
-  </div>
-</div>
-</nav>
-<!-- End Header -->
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- End slide -->
 
-<!-- Start slide -->
-<div
-id="carouselExampleCaptions"
-class="carousel slide"
-data-bs-ride="carousel"
->
-<div class="carousel-indicators">
-  <button
-  type="button"
-  data-bs-target="#carouselExampleCaptions"
-  data-bs-slide-to="0"
-  class="active"
-  aria-current="true"
-  aria-label="Slide 1"
-  ></button>
-  <button
-  type="button"
-  data-bs-target="#carouselExampleCaptions"
-  data-bs-slide-to="1"
-  aria-label="Slide 2"
-  ></button>
-  <button
-  type="button"
-  data-bs-target="#carouselExampleCaptions"
-  data-bs-slide-to="2"
-  aria-label="Slide 3"
-  ></button>
-</div>
-<div class="carousel-inner">
-  <div class="carousel-item active">
-    <img src="imgs/home/1.jpg" class="d-block w-100" alt="#" />
-    <div class="carousel-caption d-none d-md-block">
-      <h1>Ready to get Started?</h1>
-      <p>
-        Self EducatIon Resources and Infos Technology is brining a massive
-        wave of evolution on learning things on different waysReady to get
-        Started?
-      </p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="imgs/home/2.jpg" class="d-block w-100" alt="#" />
-    <div class="carousel-caption d-none d-md-block">
-      <h1>Ready to get Started?</h1>
-      <p>
-        Self EducatIon Resources and Infos Technology is brining a massive
-        wave of evolution on learning things on different waysReady to get
-        Started?
-      </p>
-    </div>
-  </div>
-  <div class="carousel-item">
-    <img src="imgs/home/3.jpg" class="d-block w-100" alt="#" />
-    <div class="carousel-caption d-none d-md-block">
-      <h1>Ready to get Started?</h1>
-      <p>
-        Self EducatIon Resources and Infos Technology is brining a massive
-        wave of evolution on learning things on different waysReady to get
-        Started?
-      </p>
-    </div>
-  </div>
-</div>
-<button
-class="carousel-control-prev"
-type="button"
-data-bs-target="#carouselExampleCaptions"
-data-bs-slide="prev"
->
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button
-class="carousel-control-next"
-type="button"
-data-bs-target="#carouselExampleCaptions"
-data-bs-slide="next"
->
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button>
-</div>
-<!-- End slide -->
+    <!-- Start Categories 3 -->
+    <div class="category pt-3">
+      <div class="Categories-overlay pb-3 pt-3">
+        <div class="card">
+          <img
+            src="imgs/1665629761_لارج-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
 
-<!-- Start Overlay -->
-<div class="title-overlay">
-  <h2>Via School Categories Courses</h2>
-  <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
-</div>
-<div class="Categories-overlay">
-  <div class="containerr">
-    <img src="imgs/courses/1.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Design</div>
-      <div class="text2">Over 800 Sourses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/2.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Business</div>
-      <div class="text2">Over 350 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/3.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Software Development</div>
-      <div class="text2">Over 350 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/4.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Web Development</div>
-      <div class="text2">Over 640 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/5.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Photography</div>
-      <div class="text2">Over 740 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/6.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Audio + Music</div>
-      <div class="text2">Over 120 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/7.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">Marketing</div>
-      <div class="text2">Over 200 Courses</div>
-    </div>
-  </div>
-  
-  <div class="containerr">
-    <img src="imgs/courses/8.jpg" alt="Avatar" class="image" />
-    <div class="overlay">
-      <div class="text1">3D + Animation</div>
-      <div class="text2">Over 900 Courses</div>
-    </div>
-  </div>
-</div>
-<!-- End Overlay -->
+        <div class="card">
+          <img
+            src="imgs/1665629868_بيتس-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
 
-<!-- Start landing -->
-<div class="h text-center">
-  <button class="button-general">View All Courses</button>
-  <div class="landing">
-    <div class="intro-text">
-      <p>STARTING ONLINE LEARNING</p>
-      <h1>ENHANCE YOUR SKILLS WITH BEST ONLINE COURSES</h1>
-      <button class="button">Get Started Now</button>
-    </div>
-  </div>
-</div>
-<!-- End landing -->
+        <div class="card">
+          <img
+            src="imgs/1665629892_دواجن-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
 
-<!-- Start Top Courses -->
-<div class="articles" id="articles">
-  <div class="top-courses">
-    <h3>Courses</h3>
-    <a href="course-videos.html">More...</a>
-  </div>
-  <div class="articles-box">
-    <div class="box">
-      <img src="imgs/courses/t1.jpg" alt="" />
-      
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">Introduction Introduction Web Design with HTML</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
+        <div class="card">
+          <img
+            src="imgs/1665630012_مواد دراسية-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
         </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-    
-    <div class="box">
-      <img src="imgs/courses/t2.jpg" alt="" />
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">Designing a Responsive Mobile Website with Muse</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
-        </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-    
-    <div class="box">
-      <img src="imgs/courses/t3.jpg" alt="" />
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">Adobe XD: Prototyping Tips and Tricks</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
-        </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-    
-    <div class="box">
-      <img src="imgs/courses/t4.jpg" alt="" />
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">Sketch: Creating Responsive Responsive SVG</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
-        </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-    
-    <div class="box">
-      <img src="imgs/courses/t5.jpg" alt="" />
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">Design Instruments for Communication</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
-        </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-    
-    <div class="box">
-      <img src="imgs/courses/t7.jpg" alt="" />
-      <div class="content">
-        <p>Ali TUFAN</p>
-        <a href="course-details.html">How to be a DJ? Make Electronic Music</a>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <span>(6)</span>
-      </div>
-      <div class="info">
-        <div class="info-icon">
-          <i ml-3 class="user fa-regular fa-user"></i>
-          <a href=""> 1548 </a>
-          <i class="message fa-regular fa-message"></i>
-          <a href=""> 25 </a>
-        </div>
-        <a class="dollar" href="#">$69.95</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- End Top Courses -->
 
-<!-- Start Footer -->
-<div class="footer">
-  <div class="row g-0">
-    <div class="col-lg-4 col-md-6 p-3">
-      <div class="box">
-        <h5>Address</h5>
-        <a  href="index.html">329 Queensberry Street, North Melbourne</a>
-        <a  href="index.html">VIC 3051, Australia.</a>
-        <a  href="index.html">123 456 7890</a>
-      </div>
-    </div>
-    
-    <div class="col-lg-4 col-md-6 p-3">
-      <div class="box">
-        <h5>Pages</h5>
-        <a href="about-us.html">About Us</a>
-        <a href="contact-us.html">Contact</a>
-        <a href="index.html">Become a Teacher</a>
-      </div>
-    </div>
-    
-    <div class="col-lg-4 col-md-6 p-3">
-      <div class="box">
-        <h5>Contact</h5>
-        <a href="index.html">01234567890</a>
-        <a href="index.html">mohamed@email.come</a>
-        <a href="index.html">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-  
-  <p class="copyright">Copyright kuttabi © 2020. All Rights Reserved.</p>
-</div>
-<!-- End Footer -->
+        <div class="card">
+          <img
+            src="imgs/1669902355_Rfmd-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
 
-<!-- JavaScript Bundle with Popper -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-crossorigin="anonymous"
-></script>
-<!-- script js -->
-<script src="js/main.js"></script>
-</body>
+        <div class="card">
+          <img
+            src="imgs/1670329779_images (9)- (1).jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+        <div class="card">
+          <img
+            src="imgs/1670329779_images (9)-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+
+        <div class="card">
+          <img
+            src="imgs/1670595572_images (10)-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design Caseous</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+
+        <div class="card">
+          <img
+            src="imgs/1670597219_download (2)-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+
+        <div class="card">
+          <img
+            src="imgs/1670601899_Goat-PPR-.png"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+
+        <div class="card">
+          <img
+            src="imgs/1670329779_images (9)- (1).jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Design Caseous</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+
+        <div class="card">
+          <img
+            src="imgs/1670331925_download (1)-.jpg"
+            class="card-img-top"
+            alt="img-card"
+          />
+          <h3 class="card-title">Caseous Lymphadenitis</h3>
+          <h6 class="card-text">Over 800 Sourses</h6>
+        </div>
+      </div>
+    </div>
+    <!-- End Overlay -->
+
+    <!-- Start landing 4 -->
+    <div class="text-center">
+      <button class="button-general">View All Courses</button>
+      <div class="landing">
+        <div class="intro-text">
+          <p>STARTING ONLINE LEARNING</p>
+          <h1>ENHANCE YOUR SKILLS WITH BEST ONLINE COURSES</h1>
+          <button class="button">Get Started Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- End landing -->
+
+    <!-- Start Top Courses 5 -->
+    <div class="articles pb-3" id="articles">
+      <div class="top-courses">
+        <h3>Courses</h3>
+        <a href="course-videos.html">More...</a>
+      </div>
+      <div class="articles-box">
+        <div class="box">
+          <img src="imgs/1665629761_لارج-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Designing a Responsive Mobile Website with Muse
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Sketch: Creating Responsive Responsive SVG
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629892_دواجن-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Design Instruments for Communication
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Designing a Responsive Mobile Website with Muse
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629761_لارج-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Designing a Responsive Mobile Website with Muse
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Sketch: Creating Responsive Responsive SVG
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629892_دواجن-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Design Instruments for Communication
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Designing a Responsive Mobile Website with Muse
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629761_لارج-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Designing a Responsive Mobile Website with Muse
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+          <div class="content">
+            <p>Ali TUFAN</p>
+            <a href="course-details.html">
+              Sketch: Creating Responsive Responsive SVG
+            </a>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(6)</span>
+          </div>
+          <div class="info">
+            <div class="info-icon">
+              <i ml-3 class="user fa-regular fa-user"></i>
+              <a href="">1548</a>
+              <i class="message fa-regular fa-message"></i>
+              <a href="">25</a>
+            </div>
+            <a class="dollar" href="#">$69.95</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Courses -->
+
+    <!-- Start Footer 6 -->
+    <div class="footer">
+      <div class="row g-0">
+        <div class="col-lg-4 col-md-6 pt-4">
+          <div class="box">
+            <h5>Address</h5>
+            <a href="index.html">329 Queensberry Street, North Melbourne</a>
+            <a href="index.html">VIC 3051, Australia.</a>
+            <a href="index.html">123 456 7890</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="box">
+            <h5>Pages</h5>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="index.html">Become a Teacher</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 pt-4">
+          <div class="box">
+            <h5>Contact</h5>
+            <a href="index.html">01013218579</a>
+            <a href="index.html">mohamed@email.come</a>
+            <a href="index.html">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 pt-3">
+          <a href="index.html">
+            <img class="footer-img" src="imgs/LOGO.png" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <p class="copyright">Copyright kuttabi © 2020. All Rights Reserved.</p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

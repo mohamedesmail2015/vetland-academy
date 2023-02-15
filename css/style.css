@@ -387,7 +387,8 @@ ul {
   background-color: var(--main-color);
 }
 
-.articles-box {
+.articles-box,
+.courses-box {
   display: flex;
   flex-wrap: wrap;
   text-align: end;
@@ -396,7 +397,15 @@ ul {
 
 .articles-box .box {
   width: 19%;
-  height: 300px;
+}
+
+.courses-box .box {
+  width: 23%;
+}
+
+.articles-box .box,
+.courses-box .box {
+  height: 340px;
   padding: 5px;
   margin: 5px;
   border-radius: 6px;
@@ -406,45 +415,52 @@ ul {
     box-shadow var(--main-transition);
 }
 
-.articles-box .box:hover {
+.articles-box .box:hover,
+.courses-box .box:hover {
   transform: translateY(-5px);
   box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 
-.articles-box .box img {
+.articles-box .box img,
+.courses-box .box img {
   width: 100%;
   max-height: 45%;
 }
 
-.articles-box .box .content {
+.articles-box .box .content,
+.courses-box .content {
   padding: 5px;
   margin: 5px;
-  height: 40%;
+  height: 35%;
   text-align: left;
 }
 
-.articles-box .box .content p {
+.articles-box .box .content p,
+.courses-box .box .content p {
   font-size: 14px;
   margin: 0 auto 5px;
   padding: 0;
   color: var(--main-color);
 }
 
-.articles-box .box .content a {
+.articles-box .box .content a,
+.courses-box .box .content a {
   color: #0a0a0a;
   display: block;
   font-size: 16px;
   line-height: 1.3;
 }
 
-.articles .box .content i {
+.articles .box .content i,
+.courses-box .content i {
   font-size: 12px;
   color: #d0d23c;
 }
 
-.articles-box .box .info {
+.articles-box .box .info,
+.courses-box .box .courses-info {
   padding: 5px;
-  height: 15%;
+  height: 20%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -452,22 +468,31 @@ ul {
   border-top: 1px solid #e6e6e7;
 }
 
-.info-icon .message {
+.info-icon .message,
+.courses-info .info-icon .message {
   margin: 0 5px 0 10px;
 }
 
-.articles .box .info a {
+.articles .info a,
+.courses-info a {
   color: #555555;
 }
 
-.articles .box .info .dollar {
+.articles .info .dollar,
+.courses-info .dollar {
   padding: 5px;
   color: #c75533;
 }
 
 @media (max-width: 768px) {
   .articles-box .box {
-    width: 80%;
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .courses-box .box {
+    width: 98%;
     padding: 10px;
     margin: 10px;
   }
@@ -503,10 +528,35 @@ ul {
   font-size: 15px;
 }
 
-.footer .box a i {
-  font-size: 17px;
+/* .footer .box a i {
+  font-size: 22px;
   font-weight: bold;
   margin: 5px 20px 0 0;
+  height: 50px;
+  width: 50px;
+  color: #0d1f95;
+  background-color: #15742f;
+} */
+
+.footer .box a i {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 20px;
+  color: #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--main-color);
+  background-color: var(--main-color);
+}
+
+.footer .box a i:hover {
+  color: var(--main-color);
+  border: solid 2px #ffffff;
+  background-color: #ffffff;
 }
 
 .footer .copyright {
@@ -592,10 +642,7 @@ ul {
     font-size: 17px;
     font-weight: 400;
   }
-}
 
-/* Small */
-@media (max-width: 768px) {
   .intro-text p {
     top: 80%;
     left: 50%;
@@ -607,7 +654,7 @@ ul {
 /* End landing    */
 
 /* Start Top Courses */
-
+/******************************** col-9 ********************************/
 /* result-Video 1 */
 .result-Video {
   display: flex;
@@ -615,9 +662,10 @@ ul {
 
 .result-Video p {
   margin: 10px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-/* Small */
 @media (max-width: 768px) {
   .result-Video p {
     margin: auto;
@@ -636,12 +684,11 @@ ul {
   justify-content: space-between;
   text-align: start;
   margin-right: 10px;
-  border-radius: 5px;
   padding: 5px;
-  border: solid #dddddd 1px;
+  border: solid var(--main-color) 1px !important;
   outline: none;
   width: 220px;
-  height: 50px;
+  height: 45px;
   background-color: #ffffff;
 }
 
@@ -661,16 +708,11 @@ ul {
 }
 
 .dropdown-menu .activ {
-  color: #304ce8;
-}
-
-.dropdown-menu .activ:hover {
-  color: #304ce8;
-  background-color: #ffffff !important;
+  color: var(--main-color);
 }
 
 .dropdown-menu .activ i {
-  color: #0000ba;
+  color: var(--main-color);
   margin-left: 60px;
 }
 
@@ -686,32 +728,36 @@ ul {
   }
 
   .dropdown-search .drop {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 91.5%;
+    margin: 15px auto;
+  }
+
+  .input-group {
+    width: 99% !important;
+    text-align: center;
+    justify-content: center;
   }
 }
 
-.input-group {
-  margin-right: 15px;
+.input-group input {
+  width: 80%;
+  outline: none;
+  border: solid var(--main-color) 1px !important;
 }
 
-.input-group input {
-  height: 50px;
-  border: solid #dddddd 1px;
+.input-group input,
+.input-group .btn-search {
+  height: 45px;
+  padding: 0 10px;
+  border: solid var(--main-color) 1px;
+  background-color: #ffffff;
 }
 
 .input-group input:focus {
   border: solid #dddddd 1px;
 }
 
-.input-group .btn-search {
-  height: 50px;
-  border: solid #dddddd 1px;
-  background-color: #ffffff;
-}
-
-/** col-3 **/
-
+/******************************** col-3 ********************************/
 /* Selected-Filters 1*/
 .Selected-Filters {
   margin: 10px;
@@ -722,7 +768,10 @@ ul {
 
 .Selected-button {
   width: 100%;
-  height: 90px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
   text-align: start;
   display: flex;
   justify-content: space-between;
@@ -773,7 +822,7 @@ ul {
 
 .Software-button {
   width: 100%;
-  height: 90px;
+  height: 60px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -837,12 +886,12 @@ ul {
 
 .card-Author {
   height: 350px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .Author-button {
   width: 100%;
-  height: 90px;
+  height: 60px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -906,7 +955,7 @@ ul {
 
 .Price-button {
   width: 100%;
-  height: 90px;
+  height: 60px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -950,7 +999,7 @@ ul {
 
 .skill-button {
   width: 100%;
-  height: 90px;
+  height: 60px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -1000,7 +1049,7 @@ ul {
 
 .Rating-button {
   width: 100%;
-  height: 90px;
+  height: 60px;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -1915,20 +1964,20 @@ ul {
 /**************************************************************/
 /* account page */
 .account {
-  padding: 105px 0 0;
+  padding-top: 105px;
 }
 
 .account p {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 20px 0 20px 85px;
+  padding: 10px 0 10px 85px;
   color: var(--main-color);
   background-color: #f8f9fa;
 }
 
 .account p a {
   padding: 10px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--main-color);
 }

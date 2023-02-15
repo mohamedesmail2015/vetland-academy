@@ -1,772 +1,788 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- normalize -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-  href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
-  rel="stylesheet"
-  />
-  
-  <!-- CSS only -->
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-  crossorigin="anonymous"
-  />
-  
-  <!-- style.css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Courses</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
 
-<body>
-  <!-- Start Header 1 -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <img
-        class="logo-img"
-        src="imgs/LOGO.png"
-        alt="logo-img"
-        title="logo-img"
-      />
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="index.html"
-              title="Home"
-            >
-              Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="Courses.html" title="Home">
-              Courses
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              href="instructors.html"
-              title="Instructors"
-            >
-              Instructors
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              href="contact-us.html"
-              title="Contact Us"
-            >
-              Contact Us
-            </a>
-          </li>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-          <li class="nav-item">
-            <a class="nav-link active" href="about-us.html" title="About Us">
-              About Us
-            </a>
-          </li>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
+      rel="stylesheet"
+    />
 
-          <li class="nav-item dropdown" title="free courses">
-            <a
-              class="nav-link active dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              free courses
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">first course</a></li>
-              <li><a class="dropdown-item" href="#">second course</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">third course</a></li>
-            </ul>
-          </li>
-        </ul>
+    <!-- bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
-        <ul class="d-flex">
-          <li class="list-inline-item">
-            <a href="account.html" class="Login btn d-flex">
-              <i class="fa-regular fa-user"></i>
-              <span>Account</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="login.html" class="Login btn d-flex">
-              <i class="fa-regular fa-user"></i>
-              <span>Login</span>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="register.html" class="register btn d-flex">
-              <i ml-3 class="fa-regular fa-user"></i>
-              <span>Register</span>
-            </a>
-          </li>
-        </ul>
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        <form>
-          <input
-            class="input-form"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="button-form btn btn-success" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- End Header -->
+    <!-- title -->
+    <title>Vetland Academy</title>
+    <link rel="icon" href="imgs/LOGO.png" />
+  </head>
 
-<!-- Start Courses  -->
-<div class="account">
-  <p><a href="index.html">Home</a> <span>/</span> <a href="Courses.html">Courses</a></p>
-</div>
-<!-- End Courses  -->
+  <body>
+    <!-- Start Header 1 -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img
+          class="logo-img"
+          src="imgs/LOGO.png"
+          alt="logo-img"
+          title="logo-img"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                title="Home"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Courses.html" title="Home">
+                Courses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="instructors.html"
+                title="Instructors"
+              >
+                Instructors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="contact-us.html"
+                title="Contact Us"
+              >
+                Contact Us
+              </a>
+            </li>
 
-<!-- Start Top Courses -->
-<div class="row g-0 m-3">
-  <!-- col-lg-9 -->
-  <div class="col-lg-9 mr-2">
-    <div>
-      <div class="row mt-5 mb-5">
-        <!-- Video Tutorials 1-->
-        <div class="result-Video col-lg-5">
-          <p>85</p>
-          <p>results 1,236</p>
-          <p>Video Tutorials</p>
-        </div>
-        <!-- dropdown-search 2-->
-        <div class="dropdown-search col-lg-7">
-          <div class="dropdown">
-            <button
-            class="drop dropdown"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            >
-            <span>Newly published</span>
-            <i class="down fa-solid fa-caret-down"></i>
-          </button>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item activ" href="#"
-              >Newly published <i class="fa-solid fa-check"></i
-                ></a>
-              </li>
-              <li><a class="dropdown-item" href="#">Recent</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Old Review</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="input-group">
+            <li class="nav-item">
+              <a class="nav-link active" href="about-us.html" title="About Us">
+                About Us
+              </a>
+            </li>
+
+            <li class="nav-item dropdown" title="free courses">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                free courses
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">first course</a></li>
+                <li><a class="dropdown-item" href="#">second course</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">third course</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="d-flex">
+            <li class="list-inline-item">
+              <a href="account.html" class="Login btn d-flex">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="login.html" class="Login btn d-flex">
+                <i class="fa-regular fa-user"></i>
+                <span>Login</span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="register.html" class="register btn d-flex">
+                <i ml-3 class="fa-regular fa-user"></i>
+                <span>Register</span>
+              </a>
+            </li>
+          </ul>
+
+          <form>
             <input
-            type="search"
-            class="form-control"
-            aria-label="Text input with segmented dropdown button"
+              class="input-form"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
             />
-            <button type="button" class="btn-search">
-              <i class="solid fa-solid fa-magnifying-glass"></i>
+            <button class="button-form btn btn-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-          </div>
+          </form>
         </div>
       </div>
+    </nav>
+    <!-- End Header -->
+
+    <!-- Start Courses  -->
+    <div class="account">
+      <p>
+        <a href="index.html">Home</a> <span>/</span>
+        <a href="Courses.html">Courses</a> <span>/</span>
+        <a href="course-details.html">Course-details</a> <span>/</span>
+        <a href="course-videos.html">Courses-videos</a>
+      </p>
     </div>
-    <!-- articles-box 3-->
-    <div class="articles-box">
-      <div class="box">
-        <img src="imgs/1665629761_لارج-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Designing a Responsive Mobile Website with Muse
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
+    <!-- End Courses  -->
+
+    <!-- Start Top Courses -->
+    <div class="row g-0 m-3">
+      <!-- col-lg-9 -->
+      <div class="col-lg-9 mr-2">
+        <div>
+          <div class="row mt-2 mb-2">
+            <!-- Video Tutorials 1-->
+            <div class="result-Video col-lg-5">
+              <p>85</p>
+              <p>results 1,236</p>
+              <p>Video Tutorials</p>
+            </div>
+            <!-- dropdown-search 2-->
+            <div class="dropdown-search col-lg-7">
+              <div class="dropdown">
+                <button
+                  class="drop dropdown"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>Newly published</span>
+                  <i class="down fa-solid fa-caret-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item activ" href="#"
+                      >Newly published <i class="fa-solid fa-check"></i
+                    ></a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Recent</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Old Review</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="search"
+                  aria-label="Text input with segmented dropdown button"
+                  placeholder="search"
+                />
+                <button type="button" class="btn-search">
+                  <i class="solid fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
           </div>
-          <a class="dollar" href="#">$69.95</a>
+        </div>
+        <!-- articles-box 3-->
+        <div class="courses-box">
+          <div class="box">
+            <img src="imgs/1665629761_لارج-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Designing a Responsive Mobile Website with Muse
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Sketch: Creating Responsive Responsive SVG
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629892_دواجن-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Design Instruments for Communication
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Designing a Responsive Mobile Website with Muse
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629761_لارج-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Designing a Responsive Mobile Website with Muse
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Sketch: Creating Responsive Responsive SVG
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629892_دواجن-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Design Instruments for Communication
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Designing a Responsive Mobile Website with Muse
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629761_لارج-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Designing a Responsive Mobile Website with Muse
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="imgs/1665629868_بيتس-.jpg" alt="" />
+            <div class="content">
+              <p>Ali TUFAN</p>
+              <a href="course-details.html">
+                Sketch: Creating Responsive Responsive SVG
+              </a>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(6)</span>
+            </div>
+            <div class="courses-info">
+              <div class="info-icon">
+                <i ml-3 class="user fa-regular fa-user"></i>
+                <a href="">1548</a>
+                <i class="message fa-regular fa-message"></i>
+                <a href="">25</a>
+              </div>
+              <a class="dollar" href="#">$69.95</a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="box">
-        <img src="imgs/1665629868_بيتس-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Sketch: Creating Responsive Responsive SVG
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+      <!-- col-lg-3 -->
+      <div class="col-lg-3 ml-2">
+        <!-- Selected Filters 1-->
+        <div class="Selected-Filters mt-2 mb-2">
+          <button
+            class="Selected-button btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample2"
+          >
+            <span>Selected Filters </span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
 
-      <div class="box">
-        <img src="imgs/1665629892_دواجن-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Design Instruments for Communication
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card-body">
+                  <label>Photoshop <span>x</span></label>
+                  <label>Sketch <span>x</span></label>
+                  <label>Beginner <span>x</span></label>
+                </div>
+              </div>
+            </div>
           </div>
-          <a class="dollar" href="#">$69.95</a>
         </div>
-      </div>
 
-      <div class="box">
-        <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Designing a Responsive Mobile Website with Muse
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+        <!-- Selected-Software 2-->
+        <div class="Selected-Software mb-2">
+          <button class="Software-button" id="hide">
+            <span>Software</span> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="card-Software">
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Photoshop</span>
+              </div>
+              <p>(03)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665629761_لارج-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Designing a Responsive Mobile Website with Muse
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Adobe Illustrator</span>
+              </div>
+              <p>(15)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665629868_بيتس-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Sketch: Creating Responsive Responsive SVG
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Graphic Design</span>
+              </div>
+              <p>(126)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665629892_دواجن-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Design Instruments for Communication
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Sketch</span>
+              </div>
+              <p>(1,584)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665630012_مواد دراسية-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Designing a Responsive Mobile Website with Muse
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>InDesign</span>
+              </div>
+              <p>(34)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665629761_لارج-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Designing a Responsive Mobile Website with Muse
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
-          </div>
-          <a class="dollar" href="#">$69.95</a>
-        </div>
-      </div>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>CorelDRAW</span>
+              </div>
+              <p>(34)</p>
+            </div>
 
-      <div class="box">
-        <img src="imgs/1665629868_بيتس-.jpg" alt="" />
-        <div class="content">
-          <p>Ali TUFAN</p>
-          <a href="course-details.html">
-            Sketch: Creating Responsive Responsive SVG
-          </a>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <span>(6)</span>
-        </div>
-        <div class="info">
-          <div class="info-icon">
-            <i ml-3 class="user fa-regular fa-user"></i>
-            <a href="">1548</a>
-            <i class="message fa-regular fa-message"></i>
-            <a href="">25</a>
+            <div class="Software-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>After Effects</span>
+              </div>
+              <p>(06)</p>
+            </div>
+
+            <div class="Software-Sections">
+              <div class="activ-hover">
+                <i class="solid fa-solid fa-plus"></i> See More
+              </div>
+            </div>
           </div>
-          <a class="dollar" href="#">$69.95</a>
+        </div>
+
+        <!-- Selected-Author 3-->
+        <div class="Selected-Author mb-2">
+          <button class="Author-button" id="toggle">
+            <span>Author</span> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="card-Author">
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Morten Rand</span>
+              </div>
+              <p>(15)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Rayi Villalobos</span>
+              </div>
+              <p>(125)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>James William</span>
+              </div>
+              <p>(1.584)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Jen Kramery</span>
+              </div>
+              <p>(34)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Chris Notder</span>
+              </div>
+              <p>(58)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Kramery Chris</span>
+              </div>
+              <p>(06)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>James William</span>
+              </div>
+              <p>(43)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Rayi Villalobos</span>
+              </div>
+              <p>(23)</p>
+            </div>
+
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Kramery Chris</span>
+              </div>
+              <p>(57)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected-Price 4-->
+        <div class="Selected-Price mb-2">
+          <button class="Price-button" id="Price">
+            <span>Price</span> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="card-Price">
+            <div class="Author-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Paid</span>
+              </div>
+            </div>
+
+            <div class="Price-Sections">
+              <div class="form-switch">
+                <input class="check form-check-input" type="checkbox" />
+                <span>Free</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected-Skill level 5-->
+        <div class="Selected-skill mb-2">
+          <button class="skill-button" id="skill">
+            <span>Skill level</span> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="card-skill">
+            <div class="skill-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Beginner</span>
+              </div>
+              <p>(03)</p>
+            </div>
+
+            <div class="skill-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Intermediate</span>
+              </div>
+              <p>(15)</p>
+            </div>
+
+            <div class="skill-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Advanced</span>
+              </div>
+              <p>(126)</p>
+            </div>
+
+            <div class="skill-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Appropriate for all</span>
+              </div>
+              <p>(1,584)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected-Rating 6-->
+        <div class="Selected-Rating mb-2">
+          <button class="Rating-button" id="rating">
+            <span>Rating</span> <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="card-Rating">
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>Show All</span>
+              </div>
+              <p>(03)</p>
+            </div>
+
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>1 star and higher</span>
+              </div>
+              <p>(15)</p>
+            </div>
+
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>2 star and higher</span>
+              </div>
+              <p>(126)</p>
+            </div>
+
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>3 star and higher</span>
+              </div>
+              <p>(1,584)</p>
+            </div>
+
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>4 star and higher</span>
+              </div>
+              <p>(34)</p>
+            </div>
+
+            <div class="Rating-Sections">
+              <div>
+                <input class="check form-check-input" type="checkbox" />
+                <span>5 star and higher</span>
+              </div>
+              <p>(58)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected-Not-sure 7-->
+        <div class="sure-all mb-2">
+          <div class="sure">
+            <img src="imgs/2.png" alt="" />
+            <h3>Not sure?</h3>
+          </div>
+          <p>Every course comes with a 30-day money-back guarantee</p>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- col-lg-3 -->
-  <div class="col-lg-3 ml-2">
-    <!-- Selected Filters 1-->
-    <div class="Selected-Filters mt-5 mb-4">
-      <button
-      class="Selected-button btn"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#multiCollapseExample2"
-      >
-      <span>Selected Filters </span>
-      <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    
-    <div class="row">
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample2">
-          <div class="card-body">
-            <label>Photoshop <span>x</span></label>
-            <label>Sketch <span>x</span></label>
-            <label>Beginner <span>x</span></label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Software 2-->
-  <div class="Selected-Software mb-4">
-    <button class="Software-button" id="hide">
-      <span>Software</span> <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="card-Software">
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Photoshop</span>
-        </div>
-        <p>(03)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Adobe Illustrator</span>
-        </div>
-        <p>(15)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Graphic Design</span>
-        </div>
-        <p>(126)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Sketch</span>
-        </div>
-        <p>(1,584)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>InDesign</span>
-        </div>
-        <p>(34)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>CorelDRAW</span>
-        </div>
-        <p>(34)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>After Effects</span>
-        </div>
-        <p>(06)</p>
-      </div>
-      
-      <div class="Software-Sections">
-        <div class="activ-hover">
-          <i class="solid fa-solid fa-plus"></i> See More
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Author 3-->
-  <div class="Selected-Author mb-4">
-    <button class="Author-button" id="toggle">
-      <span>Author</span> <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="card-Author">
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Morten Rand</span>
-        </div>
-        <p>(15)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Rayi Villalobos</span>
-        </div>
-        <p>(125)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>James William</span>
-        </div>
-        <p>(1.584)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Jen Kramery</span>
-        </div>
-        <p>(34)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Chris Notder</span>
-        </div>
-        <p>(58)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Kramery Chris</span>
-        </div>
-        <p>(06)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>James William</span>
-        </div>
-        <p>(43)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Rayi Villalobos</span>
-        </div>
-        <p>(23)</p>
-      </div>
-      
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Kramery Chris</span>
-        </div>
-        <p>(57)</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Price 4-->
-  <div class="Selected-Price mb-4">
-    <button class="Price-button" id="Price">
-      <span>Price</span> <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="card-Price">
-      <div class="Author-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Paid</span>
-        </div>
-      </div>
-      
-      <div class="Price-Sections">
-        <div class="form-switch">
-          <input class="check form-check-input" type="checkbox" />
-          <span>Free</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Skill level 5-->
-  <div class="Selected-skill mb-4">
-    <button class="skill-button" id="skill">
-      <span>Skill level</span> <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="card-skill">
-      <div class="skill-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Beginner</span>
-        </div>
-        <p>(03)</p>
-      </div>
-      
-      <div class="skill-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Intermediate</span>
-        </div>
-        <p>(15)</p>
-      </div>
-      
-      <div class="skill-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Advanced</span>
-        </div>
-        <p>(126)</p>
-      </div>
-      
-      <div class="skill-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Appropriate for all</span>
-        </div>
-        <p>(1,584)</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Rating 6-->
-  <div class="Selected-Rating mb-4">
-    <button class="Rating-button" id="rating">
-      <span>Rating</span> <i class="fa-solid fa-chevron-down"></i>
-    </button>
-    <div class="card-Rating">
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>Show All</span>
-        </div>
-        <p>(03)</p>
-      </div>
-      
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>1 star and higher</span>
-        </div>
-        <p>(15)</p>
-      </div>
-      
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>2 star and higher</span>
-        </div>
-        <p>(126)</p>
-      </div>
-      
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>3 star and higher</span>
-        </div>
-        <p>(1,584)</p>
-      </div>
-      
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>4 star and higher</span>
-        </div>
-        <p>(34)</p>
-      </div>
-      
-      <div class="Rating-Sections">
-        <div>
-          <input class="check form-check-input" type="checkbox" />
-          <span>5 star and higher</span>
-        </div>
-        <p>(58)</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Selected-Not-sure 7-->
-  <div class="sure-all mb-4">
-    <div class="sure">
-      <img src="imgs/2.png" alt="" />
-      <h3>Not sure?</h3>
-    </div>
-    <p>Every course comes with a 30-day money-back guarantee</p>
-  </div>
-</div>
-</div>
-<!-- End Top Courses -->
+    <!-- End Top Courses -->
 
     <!-- Start Footer 6 -->
     <div class="footer">
@@ -813,18 +829,18 @@
     </div>
     <!-- End Footer -->
 
-<!-- JavaScript Bundle with Popper -->
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-crossorigin="anonymous"
-></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
 
-<!-- jquery -->
-<script src="js/jquery-3.6.1.min.js"></script>
-<script src="js/jquery.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
-<!-- script js -->
-<script src="js/main.js"></script>
-</body>
+    <!-- script js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

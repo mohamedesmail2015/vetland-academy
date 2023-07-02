@@ -2360,3 +2360,120 @@ p {
   margin: 0;
   padding: 10px 10px 0 10px;
 }
+
+
+
+/* Start swiper ( 7 ) */
+/* .swiper-content {
+  background-image: url(../imgs/1665629892_دواجن-.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+} */
+
+.food-slid {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.food-slid p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.food-slid h3 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  width: 300px;
+  margin: 20px auto 70px auto;
+}
+
+@media (max-width: 767px) {
+  .food-slid h3 {
+    width: 100%;
+  }
+}
+
+.single-testimonial-item {
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+
+
+.single-testimonial-item .dddddddddd {
+  text-align: start;
+  margin: 0 20px 0;
+  color: #9d8d8d;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+}
+
+.single-testimonial-item .icon {
+  text-align: start;
+  margin: 0 20px 0;
+  color: #9d8d8d;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.single-testimonial-item .description {
+  text-align: start;
+  margin: 10px 20px;
+  color: #404040;
+}
+
+.single-testimonial-item .ratings {
+  text-align: start;
+  margin: 10px 20px 0;
+  color: #fbad41;
+  font-size: 14px;
+}
+
+.single-testimonial-item .author-meta {
+  display: flex;
+  text-align: start;
+  text-align: start;
+  margin: 15px;
+}
+
+.single-testimonial-item .author-meta .thumb img {
+  height: 50px;
+  width: 50px;
+}
+
+.single-testimonial-item .author-meta .title {
+  color: #3a3a3a;
+  font-size: 14px;
+  margin: 20px 0 0 7px;
+}
+
+.single-testimonial-item .author-meta .designation {
+  color: #868686;
+  font-size: 12px;
+}
+
+.swiper-content
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--main-color);
+  /* opacity: 0.25 !important; */
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  margin-top: 90px !important;
+  height: 14px;
+  width: 20px;
+  border-radius: 30px;
+}
+/* End swiper ( 7 ) */

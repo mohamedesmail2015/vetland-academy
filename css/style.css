@@ -217,6 +217,7 @@ ul {
 }
 
 .Categories-overlay .card .card-title {
+  color: black;
   height: 25%;
   width: 100%;
   text-align: start;
@@ -407,7 +408,7 @@ ul {
   padding: 7px;
   color: white;
   background-color: var(--main-color);
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -70%);
 }
 
 .articles-box .box,

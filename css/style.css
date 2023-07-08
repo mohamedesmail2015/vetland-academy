@@ -363,16 +363,17 @@ ul {
 .top-courses {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .top-courses h3 {
   margin: 10px;
+  padding: 20px;
   font-size: 20px;
   font-weight: 800;
 }
 
-.top-courses a {
+/* .top-courses a {
   margin: 10px;
   padding: 5px 10px;
   font-size: 20px;
@@ -380,12 +381,12 @@ ul {
   border-radius: 7px;
   color: var(--main-color);
   border: solid 1px #15742f;
-}
+} */
 
-.top-courses a:hover {
+/* .top-courses a:hover {
   color: #ffffff;
   background-color: var(--main-color);
-}
+} */
 
 .articles-box,
 .courses-box {

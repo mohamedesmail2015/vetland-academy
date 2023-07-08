@@ -200,8 +200,8 @@ ul {
 .Categories-overlay {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
 }
 
 .Categories-overlay .card {
@@ -391,8 +391,8 @@ ul {
 .courses-box {
   display: flex;
   flex-wrap: wrap;
-  text-align: end;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
 }
 
 .articles-box .box .sale {
@@ -563,7 +563,7 @@ ul {
 
 .single-testimonial-item .icon {
   text-align: start;
-  margin: 0  0 0 20px;
+  margin: 0 0 0 20px;
   color: #9d8d8d;
   font-size: 30px;
   font-weight: bold;
